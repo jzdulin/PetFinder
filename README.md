@@ -1,6 +1,11 @@
-# Pet Finder
+# Project No. 2–PetFinder
 > ![Illustration](https://www.petlove.love/wp-content/uploads/2017/01/cat_dog_icon.png)  ![]() ![]()
-Click  [PetIT]() link to the app.
+Pet finder is a dynamic application that connects to a database on cats and dogs.  The database contains information on most cat and dog breeds, including color, size,weight, behavioral attributes, feeding recommendationsand other relevant details. Various links and API connections will help populate the website with relevant data.
+Click  [PetIT]()  link to the app.
+
+```
+Purpose: PetFinder is intended to provide users with relevant information on any given breed of cat or dog. Whether a user is interested in adoptinga petor learning more about their pet’s breed, this application contains applicable and practical data.  Furthermore, the application provides users the opportunity to connect to a community of owners and contribute their own data and experiences, therefore enhancing the user experience for all.
+```
 
 ## Getting Started
 ____
@@ -28,14 +33,18 @@ HomeWork Instructions and Googling a lot !
 
 **`click`** [**`PetIT`**]() **`link to watch the app.`** 
 
-## Built With
+## Technologies to be used
 
-* [NPM](http://materializecss.com/) | ` is the package manager for javascript` 
-* [_BASH terminal_](https://firebase.google.com/) | `Helps you build better mobile apps and grow your business.`
-* [**jQuery**](https://jquery.com/) | `is a fast, small, and feature-rich JavaScript library.`
-*  [**SEQuelize**](https://momentjs.com/) | `Parse, validate, manipulate, and display dates and times in JavaScript.`
-*  [**Placeholder**]() |
-
+* [NPM]() |
+* [_BASH terminal_]() | 
+* [**jQuery**]() |
+*  [**SEQuelize**]() |
+*  [**Node.js**]() |
+*  [**Express Server**]() |
+*  [**MySQL & Sequelize ORM**]() |
+*  [**Authentication protocols (Passport)**]() |
+*  [**Heroku for deployment**]() |
+*  [HTML, CSS, Bootstrap 4 (possibly jQuery UI or Materialize)]()
 ## Authors
 ![pic](http://www.alyvea.com/images/presentation-icon.png)
 > **Taddes Korris** [GitHub](https://github.com/taddes)
@@ -52,3 +61,8 @@ HomeWork Instructions and Googling a lot !
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+
+
+
+
