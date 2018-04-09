@@ -2,6 +2,7 @@
 > ![Illustration](https://www.petlove.love/wp-content/uploads/2017/01/cat_dog_icon.png)
 
 > Pet finder is a dynamic application that connects to a database on cats and dogs.  The database contains information on most cat and dog breeds, including color, size,weight, behavioral attributes, feeding recommendationsand other relevant details. Various links and API connections will help populate the website with relevant data.
+
 > Click  [PetIT]()  link to the app.
 
 ```
