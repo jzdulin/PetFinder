@@ -40,7 +40,7 @@ HomeWork Instructions and Googling a lot !
 
 ## Authors
 
-> **Taddes Korris** [GitHub]()
+ **Taddes Korris** [GitHub]()
 ![pic](http://www.alyvea.com/images/presentation-icon.png)
 **Sergio Burca** - - [*GitHub*](https://github.com/mecaniser)
 ![Sergio](https://www.shareicon.net/data/128x128/2016/03/24/738611_people_512x512.png)
