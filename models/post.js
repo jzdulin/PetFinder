@@ -1,7 +1,7 @@
 //TO BE USED LATER FOR COMMENTS SECTION
 
 // module.exports = function(sequelize, DataTypes) {
-//     var Post = sequelize.define("Post", {
+//     var Comment = sequelize.define("Comment", {
 //       name: {
 //         type: DataTypes.STRING,
 //         allowNull: false,
@@ -9,18 +9,14 @@
 //           len: [1]
 //         }
 //       },
-//       post: {
+//       comment: {
 //         type: DataTypes.TEXT,
 //         allowNull: false,
 //         validate: {
 //           len: [1]
 //         }
-//       },
-//       category: {
-//         type: DataTypes.STRING,
-//         defaultValue: "General"
 //       }
 //     });
-//     return Post;
+//     return Comment;
 //   };
   
