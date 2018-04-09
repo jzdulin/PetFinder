@@ -1,24 +1,24 @@
-var db = require("../models");
+// var db = require("../models");
 
-module.exports = function(app) {
+// module.exports = function(app) {
 
     //DISPLAY ALL THE COMMENTS
-    app.get("/api/comments/", function(req, res) {
-        db.Post.findAll({})
-            .then(function(dbPost) {
-                res.json(dbPost);
-        });
-    });
+    // app.get("/api/comments/", function(req, res) {
+    //     db.Post.findAll({})
+    //         .then(function(dbPost) {
+    //             res.json(dbPost);
+    //     });
+    // });
 
     //POST A NEW COMMENT
-    app.post("/api/comments", function(req, res) {
-        db.Post.create({
-            name: req.body.name,
-            comment: req.body.comment,
-        }).then(function(dbPost) {
-            res.json(dbPost);
-        });
-    });
+    // app.post("/api/comments", function(req, res) {
+    //     db.Post.create({
+    //         name: req.body.name,
+    //         comment: req.body.comment,
+    //     }).then(function(dbPost) {
+    //         res.json(dbPost);
+    //     });
+    // });
 
     //DELETE A COMMENT
     // app.delete("/api/comments/:id", function(req, res) {
@@ -43,4 +43,4 @@ module.exports = function(app) {
     //         res.json(dbPost);
     //     });
     // });
-}
+// }
