@@ -1,7 +1,5 @@
 # Pet Finder
-
 > ![Illustration](https://www.petlove.love/wp-content/uploads/2017/01/cat_dog_icon.png)  ![]() ![]()
-
 Click  [PetIT]() link to the app.
 
 ## Getting Started
@@ -39,20 +37,18 @@ HomeWork Instructions and Googling a lot !
 *  [**Placeholder**]() |
 
 ## Authors
-
-> **Taddes Korris** [GitHub]()
 ![pic](http://www.alyvea.com/images/presentation-icon.png)
-**Sergio Burca** - - [*GitHub*](https://github.com/mecaniser)
+> **Taddes Korris** [GitHub](https://github.com/taddes)
+
 ![Sergio](https://www.shareicon.net/data/128x128/2016/03/24/738611_people_512x512.png)
-**Philopateer Mina** - -[GitHub]()
+> **Sergio Burca** - - [*GitHub*](https://github.com/mecaniser)
+
 ![Philo](https://www.shareicon.net/data/128x128/2016/03/26/739770_people_512x512.png)
-**Josh Dulin** - - [GitHub](https://github.com/jzdulin)
+>**Philopateer Mina** - -[GitHub](https://github.com/pmina)
+
 ![josh](https://www.shareicon.net/data/128x128/2016/04/24/754632_people_512x512.png)
+>**Josh Dulin** - - [GitHub](https://github.com/jzdulin)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-
-
-
-
