@@ -12,7 +12,10 @@ app.use(bodyParser.json());
 
 app.use(express.static("public"));
 
-db.sequelize.sync({ force: true }).then(function() {
+require("./routes/animal-api-routes.js")(app);
+// require("./routes/html-routes.js")(app);
+
+db.sequelize.sync({ force: false }).then(function() {
     app.listen(PORT, function() {
       console.log("Server listening on: http://localhost:" + PORT);
     });

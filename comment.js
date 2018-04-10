@@ -1,5 +1,3 @@
-//TO BE USED LATER FOR COMMENTS SECTION
-
 // module.exports = function(sequelize, DataTypes) {
 //     var Comment = sequelize.define("Comment", {
 //       name: {
