@@ -36,6 +36,6 @@ module.exports = function(sequelize, DataTypes) {
       };
 
 
-  return Comment;
+  return Post;
 };
   

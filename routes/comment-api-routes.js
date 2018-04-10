@@ -11,7 +11,7 @@ module.exports = function(app) {
     });
 
     // DISPLAY POSTS OF A CATEGORY
-    app.get("/api/posts/breed/:breed", function(req, res) {
+    app.get("/api/comments/breed/:breed", function(req, res) {
         db.Post.findAll({
             where: {
                 breed: req.params.breed,
@@ -24,10 +24,7 @@ module.exports = function(app) {
 
     // POST A NEW COMMENT
     app.post("/api/comments", function(req, res) {
-        db.Post.create({
-            name: req.body.name,
-            comment: req.body.comment,
-        }).then(function(dbPost) {
+        db.Post.create(req.body).then(function(dbPost) {
             res.json(dbPost);
         });
     });
