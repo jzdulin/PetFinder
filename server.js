@@ -5,7 +5,7 @@ var mysql = require("mysql");
 var app = express();
 var PORT = process.env.PORT || 8080;
 
-var db = require("./models");
+var db = require("./models/index.js");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
