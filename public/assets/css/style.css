@@ -4,3 +4,6 @@
 .nav-wrapper{
     background-color: black;
 }
+body{
+    background-image: url("../images/Amazing.jpg")
+}
