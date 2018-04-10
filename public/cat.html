@@ -12,7 +12,10 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <link rel="stylesheet" href="../public/css/style.css">
-    <title>Pet Finder</title>
+
+    <!-- Bootstrap Vue -->
+    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
     <title>Cats</title>
 </head>
 
@@ -48,6 +51,18 @@
             </ul>
         </div>
     </nav>
+
+    <form>
+    <div  id="catSearch" class="card" style="width: 12.6rem;">
+        <div class="card-body bg-dark text-white">
+            <div class="form-group">
+                <label for="sel1">Select Breed</label>
+                <select class="form-control text-dark" title="Select Breed" id="dropDownCat"></select>
+                <button type="submit" class="btn btn-secondary" title="Submit" id="breedSubmit">Submit</button>
+            </div>
+        </div>
+    </div>
+</form>
 
     <div class="container">
         <div class="row">
@@ -108,6 +123,7 @@
             </div>
         </div>
     </footer>
+    <script src="./cat.js"></script>
     <script src="./js.js"></script>
     
 </body>
