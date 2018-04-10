@@ -24,6 +24,13 @@ module.exports = function(sequelize, DataTypes) {
     }, {
       timestamps: false
     });
+
+    Cat.associate = function(models) {
+      Cat.hasMany(models.Post, {
+        onDelete: "cascade"
+      });
+    };
+
     return Cat;
   };
   
