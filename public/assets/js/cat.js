@@ -34,14 +34,14 @@ $(document).ready(function() {
   populateBreed();
 
 
-  $("#breedChoices").on("click", function(event) {
+  $("#breedChoices").on("change", function(event) {
     // event.preventDefault();
 
   //Ajax call for individual cat data from API
 
   var currentURL = window.location.origin;
 
-  var catId = window.location.search.split("=");
+  var catId = window.location.search.split("=")[1];
 
   console.log(catId);
   $.ajax({
@@ -50,12 +50,14 @@ $(document).ready(function() {
   }).then (function(response) {
     console.log(response);
 
+    $(".card").html(
+      "<div><h5>" + response.breed + "</div></h5>"
+    );
+  
+
   });
 
-  $(".card").html(
-    "<div><h5>" + response.breed + "</div></h5>"
-  );
-
+ 
   // $("CATIMAGES").html(
   //   "<div><img src='" + response.img1+ "'>"
   // );
