@@ -10,10 +10,10 @@ module.exports = function(app) {
     });
 
     //route for a specific cat
-    app.get("/api/cats/:breed", function(req, res) {
+    app.get("/api/cats/:id", function(req, res) {
         db.Cat.findOne({
             where: {
-                breed: req.params.breed
+                id: req.params.id
             }
         }).then(function(dbCat) {
             res.json(dbCat);
