@@ -1,6 +1,20 @@
+
 var currentURL = window.location.origin;
 
 var catId = window.location.search.split("=");
+
+var currentURL = window.location.origin;
+
+
+function runCatsQuery() {
+    var currentURL = window.location.origin;
+    $.ajax({
+    url: currentURL + "/api/cats/",
+    method: "GET"
+    }).then(function(response) {
+        // console.log(response);
+    var dropdown = document.getElementById("dropDownCat");
+        dropdown.length = 0;
 
 
 $.ajax({
@@ -11,8 +25,9 @@ $.ajax({
   var dropdown = document.getElementById("breeds");
     dropdown.length = 0;
 
-    let defaultOption = document.createElement("option");
-    defaultOption.text = "Choose Breed";
+        let defaultOption = document.createElement("option");
+        defaultOption.text = "Choose Breed";
+
 
     dropdown.appendChild(defaultOption);
     dropdown.selectedIndex = 0;
@@ -25,6 +40,7 @@ $.ajax({
       dropdown.appendChild(option);
     }
   });
+
 
 
 // Ajax call for cat data from API
@@ -50,3 +66,5 @@ $("CATWEIGHTDIV").html(
 $("CATLIFESPANDIV").html(
   "<div><h5>" + response.life_span + "</div></h5>"
 );
+
+runCatsQuery();
