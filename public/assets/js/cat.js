@@ -1,7 +1,10 @@
-<<<<<<< HEAD
+
 var currentURL = window.location.origin;
-=======
->>>>>>> 4ab9649077e7f19dcb01cf4ab1d50996e6d8b971
+
+var catId = window.location.search.split("=");
+
+var currentURL = window.location.origin;
+
 
 function runCatsQuery() {
     var currentURL = window.location.origin;
@@ -13,23 +16,19 @@ function runCatsQuery() {
     var dropdown = document.getElementById("dropDownCat");
         dropdown.length = 0;
 
+
+$.ajax({
+  url: "/api/cats",
+  method: "GET"
+}).then (function(response) {
+
+  var dropdown = document.getElementById("breeds");
+    dropdown.length = 0;
+
         let defaultOption = document.createElement("option");
         defaultOption.text = "Choose Breed";
 
-        dropdown.appendChild(defaultOption);
-        dropdown.selectedIndex = 0;
 
-        for (var i = 0; i < response.length; i++) {
-        var option = document.createElement("option");
-        option.setAttribute("class", "dropdown-item");
-        option.text = response[i].breed;
-        option.value = response[i].id;
-        dropdown.appendChild(option);
-        }
-    });
-}
-
-<<<<<<< HEAD
     dropdown.appendChild(defaultOption);
     dropdown.selectedIndex = 0;
 
@@ -41,6 +40,31 @@ function runCatsQuery() {
       dropdown.appendChild(option);
     }
   });
-=======
+
+
+
+// Ajax call for cat data from API
+$.ajax({
+  url: "/api/cats/" + catId,
+  method: "GET"
+}).then (function(response) {
+  console.log(response);
+
+});
+
+$("CATBREEDDIV").html(
+  "<div><h5>" + response.breed + "</div></h5>"
+);
+
+$("CATIMAGES").html(
+  "<div><img src='" + response.img1+ "'>"
+);
+
+$("CATWEIGHTDIV").html(
+  "<div><h5>" + response.weight + "</div></h5>"
+);
+$("CATLIFESPANDIV").html(
+  "<div><h5>" + response.life_span + "</div></h5>"
+);
+
 runCatsQuery();
->>>>>>> 4ab9649077e7f19dcb01cf4ab1d50996e6d8b971
