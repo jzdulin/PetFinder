@@ -25,6 +25,8 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.STRING,
             defaultValue: "Miscellaneous"
         }
+    }, {
+        timestamps: false
     });
 
     Post.associate = function(models) {
