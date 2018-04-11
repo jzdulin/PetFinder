@@ -1,9 +1,18 @@
 .page-footer{
-    background-color: orange;
+    background-color: whitesmoke;
+    margin-top: 10px;
+    opacity: 0.9;
+    
 }
 .nav-wrapper{
     background-color: black;
 }
 body{
     background-image: url("../images/Amazing.jpg")
+}
+.carousel .carousel-item {
+    width:500px;
+    position: absolute;
+    top: -110px;
+    left: 0;
 }
