@@ -1,4 +1,4 @@
-var currentURL = window.location.origin:
+var currentURL = window.location.origin;
 
 
 $.ajax({
@@ -23,5 +23,3 @@ $.ajax({
       dropdown.appendChild(option);
     }
   });
-
-})
