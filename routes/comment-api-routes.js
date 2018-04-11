@@ -10,16 +10,22 @@ module.exports = function(app) {
         });
     });
 
-    // DISPLAY POSTS OF A CATEGORY
-    app.get("/api/comments/breed/:breed", function(req, res) {
+    // Display all comments for a specific cat ID
+    app.get("/api/comments/:catId", function(req, res) {
+        // var breed = req.params.breed;
+        //make a db call here to search for the cat breed, then pass the results 
+        // into a handlebars object for rendering
+    
         db.Post.findAll({
             where: {
-                breed: req.params.breed,
+                CatId: req.params.catId,
+                // include: [db.Cat]
             }
-        })
-        .then(function(dbPost) {
-            res.json(dbPost);
+        }).then(function(dbPost) {
+            res.json(dbPost)
+            // res.render("index", {posts: dbPost});
         });
+    
     });
 
     // POST A NEW COMMENT
