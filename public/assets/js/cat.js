@@ -1,70 +1,73 @@
+$(document).ready(function() {
+  $("select").formSelect();
 
-var currentURL = window.location.origin;
+ 
 
-var catId = window.location.search.split("=");
-
-var currentURL = window.location.origin;
-
-
-function runCatsQuery() {
-    var currentURL = window.location.origin;
+  function populateBreed() {
+  
     $.ajax({
-    url: currentURL + "/api/cats/",
-    method: "GET"
+      url: "/api/cats/",
+      method: "GET"
     }).then(function(response) {
-        // console.log(response);
-    var dropdown = document.getElementById("dropDownCat");
-        dropdown.length = 0;
+      console.log(response);
+
+      var dropdown = document.getElementById("breedChoices");
+
+      let defaultOption = document.createElement("option");
+      defaultOption.text = "Choose Breed";
+
+      dropdown.appendChild(defaultOption);
+      dropdown.selectedIndex = 0;
+
+      for (var i = 0; i < response.length; i++) {
+        var option = document.createElement("option");
+        option.setAttribute("class", "dropdown-item");
+        option.text = response[i].breed;
+        option.value = response[i].id;
+        dropdown.appendChild(option);
+      }
+
+      $("select").formSelect();
+    });
+  }
+
+  populateBreed();
 
 
-$.ajax({
-  url: "/api/cats",
-  method: "GET"
-}).then (function(response) {
+  $("#breedChoices").on("click", function(event) {
+    // event.preventDefault();
 
-  var dropdown = document.getElementById("breeds");
-    dropdown.length = 0;
+  //Ajax call for individual cat data from API
 
-        let defaultOption = document.createElement("option");
-        defaultOption.text = "Choose Breed";
+  var currentURL = window.location.origin;
 
+  var catId = window.location.search.split("=");
 
-    dropdown.appendChild(defaultOption);
-    dropdown.selectedIndex = 0;
+  console.log(catId);
+  $.ajax({
+    url: "/api/cats/" + catId,
+    method: "GET"
+  }).then (function(response) {
+    console.log(response);
 
-    for (var i = 0; i < response.length; i++) {
-      var option = document.createElement("option");
-      option.setAttribute("class", "dropdown-item");
-      option.text = response[i].breed;
-      option.value = response[i].id;
-      dropdown.appendChild(option);
-    }
+  });
+
+  $(".card").html(
+    "<div><h5>" + response.breed + "</div></h5>"
+  );
+
+  // $("CATIMAGES").html(
+  //   "<div><img src='" + response.img1+ "'>"
+  // );
+
+  // $("CATWEIGHTDIV").html(
+  //   "<div><h5>" + response.weight + "</div></h5>"
+  // );
+  // $("CATLIFESPANDIV").html(
+  //   "<div><h5>" + response.life_span + "</div></h5>"
+  // );
   });
 
 
 
-// Ajax call for cat data from API
-$.ajax({
-  url: "/api/cats/" + catId,
-  method: "GET"
-}).then (function(response) {
-  console.log(response);
-
 });
-
-$("CATBREEDDIV").html(
-  "<div><h5>" + response.breed + "</div></h5>"
-);
-
-$("CATIMAGES").html(
-  "<div><img src='" + response.img1+ "'>"
-);
-
-$("CATWEIGHTDIV").html(
-  "<div><h5>" + response.weight + "</div></h5>"
-);
-$("CATLIFESPANDIV").html(
-  "<div><h5>" + response.life_span + "</div></h5>"
-);
-
-runCatsQuery();
