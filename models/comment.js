@@ -1,12 +1,12 @@
 module.exports = function(sequelize, DataTypes) {
     var Post = sequelize.define("Post", {
-        breed: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            validate: {
-                len: [1]
-            }
-        },
+        // breed: {
+        //     type: DataTypes.STRING,
+        //     allowNull: false,
+        //     validate: {
+        //         len: [1]
+        //     }
+        // },
         name: {
             type: DataTypes.STRING,
             allowNull: false,
