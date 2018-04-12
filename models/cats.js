@@ -41,6 +41,41 @@ module.exports = function(sequelize, DataTypes) {
         validate: {
             len: [1]
         }
+      },
+      history:{
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            len: [1]
+        }
+      },
+      personality:{
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            len: [1]
+        }
+      },
+      care:{
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            len: [1]
+        }
+      },
+      children_animals:{
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            len: [1]
+        }
+      },
+      health:{
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            len: [1]
+        }
       }
     }, {
       timestamps: false
