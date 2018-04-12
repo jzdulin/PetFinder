@@ -43,39 +43,26 @@ module.exports = function(sequelize, DataTypes) {
         }
       },
       history:{
-        type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
-            len: [1]
-        }
+        type: DataTypes.TEXT,
+        allowNull: true,
+
       },
       personality:{
-        type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
-            len: [1]
-        }
+        type: DataTypes.TEXT,
+        allowNull: true,
+
       },
       care:{
-        type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
-            len: [1]
-        }
+        type: DataTypes.TEXT,
+        allowNull: true,
       },
       children_animals:{
-        type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
-            len: [1]
-        }
+        type: DataTypes.TEXT,
+        allowNull: true,
       },
       health:{
-        type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
-            len: [1]
-        }
+        type: DataTypes.TEXT,
+        allowNull: true,
       }
     }, {
       timestamps: false
