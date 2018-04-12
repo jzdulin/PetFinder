@@ -85,12 +85,18 @@ $(document).ready(function() {
         var postsToAdd = []
         if (catId == response[i].CatId){
           var newPost = $("<span>")
-          newPost.html("<p>" + response[i].name + "<p>" + "<p>" + response[i].comment + "</p> <hr>");
+          var dateString = moment(response[i].createdAt).format("MM-DD-YYYY HH:mm");
+          console.log(dateString)
+          newPost.html("<p>" + dateString + "<p><p>" + response[i].name + "<p>" + "<p>" + response[i].comment + "</p> <hr>");
           $(".comment-container").append(newPost)
+          // test = $(".comment-container").val()
+          // if (test === "") {
+          //   $(".comment-container").html("No comments have been posted for this breed.")
+          // }
           
         }
       }
-    });
+    }); 
 
       $(".slider").slider();
       $(".collapsible").collapsible();
