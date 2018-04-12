@@ -51,7 +51,6 @@ $(".catLoad").hide();
 
   $(document).on("click", ".cat-image", function () {
     $(".catLoad").show();
-    console.log("testing");
 
     // var catId = window.location.search.split("=")[1];
     var catId = $(this).attr("value");
