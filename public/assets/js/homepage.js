@@ -1,9 +1,9 @@
-$(document).ready(function() {
+$(document).ready(function () {
   function populateCats() {
     $.ajax({
       url: "/api/cats/",
       method: "GET"
-    }).then(function(response) {
+    }).then(function (response) {
       console.log(response);
 
       var catCarousel = $("#catCarousel");
@@ -36,7 +36,7 @@ $(document).ready(function() {
 
   populateCats();
 
-  $(document).on("click", ".cat-image", function() {
+  $(document).on("click", ".cat-image", function () {
     console.log("testing");
 
     // var catId = window.location.search.split("=")[1];
@@ -46,7 +46,7 @@ $(document).ready(function() {
     $.ajax({
       url: "/api/cats/" + catId,
       method: "GET"
-    }).then(function(response) {
+    }).then(function (response) {
       console.log(response);
       $(".breed-title").html(response.breed);
       $(".cat-img1").html("<img src='" + response.img1 + "'>");
@@ -59,12 +59,14 @@ $(document).ready(function() {
       // $(".weight-holder").html("<h5>Weight: </h5>"+ response.weight + "<br>");
     });
 
-      $(".slider").slider();
-      $(".collapsible").collapsible();
+    $(".slider").slider();
+    $(".collapsible").collapsible();
+    $('.carousel').carousel();
 
-      var elem = document.querySelector(".collapsible.expandable");
-      var instance = M.Collapsible.init(elem, {
-        accordion: false
+
+    var elem = document.querySelector(".collapsible.expandable");
+    var instance = M.Collapsible.init(elem, {
+      accordion: false
     }); // Close accordion Materialize function
 
   }); // Close click handler/AJAX call for cat info
@@ -72,11 +74,11 @@ $(document).ready(function() {
 
 
 function populateBreed() {
-  
+
   $.ajax({
     url: "/api/cats/",
     method: "GET"
-  }).then(function(response) {
+  }).then(function (response) {
     console.log(response);
 
     var dropdown = document.getElementById("breedChoices");
@@ -124,7 +126,7 @@ $("#submit").on("click", function handleFormSubmit(event) {
 })
 
 function submitPost(Post) {
-  $.post("/api/comments/", Post, function() {
+  $.post("/api/comments/", Post, function () {
     // window.location.href = "/";
   });
 }
