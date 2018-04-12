@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  
   function populateCats() {
     $.ajax({
       url: "/api/cats/",
@@ -25,13 +26,20 @@ $(document).ready(function() {
         carouselImage.attr("alt", response[i].breed);
         carouselImage.attr("value", response[i].id);
         carouselImage.addClass("cat-image", response[i].id);
+        carouselImage.attr("data-caption", response[i].breed);
+
+        // carouselImage.attr("class", "tooltipped");
+        // carouselImage.attr("data-position", "top");
+        // carouselImage.attr("data-tooltip", response[i].breed);
 
         carouselImage.appendTo(carouselItem);
         carouselItem.appendTo(catCarousel);
       }
-
+      // $('.tooltipped').tooltip();
       $(".carousel").carousel();
+    
     });
+   
   }
 
   populateCats();
@@ -52,8 +60,13 @@ $(document).ready(function() {
       $(".cat-img1").html("<img src='" + response.img1 + "'>");
       $(".cat-img2").html("<img src='" + response.img2 + "'>");
       $(".cat-img3").html("<img src='" + response.img3 + "'>");
-      $(".lifeSpan-holder").text(response.life_span);
-      $(".weight-holder").text(response.weight);
+      $(".life_span").text(response.life_span);
+      $(".weight").text(response.weight);
+      $(".history").html(response.history);
+      $(".personality").html(response.personality);
+      $(".health").text(response.health);
+      $(".care").text(response.care);
+      $(".children_animals").text(response.children_animals);
 
       // $(".lifeSpan-holder").html("<h5>Life Span: </h5>" + response.life_span + "<br>");
       // $(".weight-holder").html("<h5>Weight: </h5>"+ response.weight + "<br>");
