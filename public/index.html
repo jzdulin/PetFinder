@@ -29,10 +29,7 @@
     <nav>
         <div class="nav-wrapper">
             <a href="index.html" class="brand-logo">PetFinder</a>
-            <ul class="right hide-on-med-and-down">
-                <a href="comment.html">Comments</a>
-                </li>
-            </ul>
+
         </div>
     </nav>
 
@@ -44,14 +41,11 @@
                     <div class="card-content white-text">
                         <span class="card-title">Pet Finder</span>
                         <p>
-                            <h6>Pet finder is a dynamic application that connects to a database on cats. The database contains
-                                information on most cat breeds, including color, size,weight, behavioral attributes, feeding
-                                recommendations and other relevant details. Various links and API connections will help populate
-                                the website with relevant data.</h6>
+                            <h6>Welcome to PetFinder!  This is your ultimate source for information on all breeds of cats.
+                                Select a cat breed below to see all related info on that type of cat. Feel free to leave
+                                a comment about your experience with this type of cat!
+                            </h6>
                         </p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">Wiki</a>
                     </div>
                 </div>
             </div>
@@ -66,7 +60,7 @@
               
             <div class="row">
                 <div class="col l12 s12">
-                  <div class="card cardCat blue-grey darken-1">
+                  <div class="card blue-grey darken-1 catLoad">
                     <div class="card-content white-text">
                       <span class="card-title breed-title"></span>
                       <span class="image-holder"></span>
@@ -90,64 +84,61 @@
                       <ul class="collapsible expandable">
                           <!-- Life Span -->
                         <li>
-                          <div class="collapsible-header waves-effect">Life Span</div>
+                          <div class="collapsible-header waves-effect black-text">Life Span</div>
                           <div class="collapsible-body"><span class="life_span">Lorem ipsum dolor sit amet.</span></div>
                         </li>
                         <!-- Weight -->
                         <li>
-                          <div class="collapsible-header waves-effect">Weight</div>
+                          <div class="collapsible-header waves-effect black-text">Weight</div>
                           <div class="collapsible-body"><span class="weight"></span></div>
                         </li>
                         <!-- History -->
                         <li>
-                          <div class="collapsible-header waves-effect">History</div>
+                          <div class="collapsible-header waves-effect black-text">History</div>
                           <div class="collapsible-body"><span class="history">Lorem ipsum dolor sit amet.</span></div>
                         </li>
                         <!-- Personality -->
                         <li>
-                            <div class="collapsible-header waves-effect">Personality</div>
+                            <div class="collapsible-header waves-effect black-text">Personality</div>
                             <div class="collapsible-body"><span class="personality">Lorem ipsum dolor sit amet.</span></div>
                         </li>
                           <!-- Health -->
                           <li>
-                            <div class="collapsible-header waves-effect">Health</div>
-                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                            <div class="collapsible-header waves-effect black-text">Health</div>
+                            <div class="collapsible-body"><span class="health"></span></div>
                           </li>
                           <!-- Care -->
                           <li>
-                            <div class="collapsible-header waves-effect">Care</div>
-                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                            <div class="collapsible-header waves-effect black-text">Care</div>
+                            <div class="collapsible-body"><span class="care"></span></div>
                           </li>
                           <!-- Children and Other animals -->
                           <li>
-                            <div class="collapsible-header waves-effect">Children and Other Animals</div>
-                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                            <div class="collapsible-header waves-effect black-text">Children and Other Animals</div>
+                            <div class="collapsible-body"><span class="children_animals"></span></div>
                           </li>
                       </ul>
                           
-                      <span class="lifeSpan-holder"></span>
-                      <span class="weight-holder"></span>
                     </div>
-                    <div class="card-action">
-                      
-                    </div>
+
                 </div>
             </div>
+        </div>
 
-            <div class="container">
+            <!-- <div class="container"> -->
                     <div class="row">
                         <div class="col l12 s12">
-                          <div class="card blue-grey darken-1">
+                          <div class="card blue-grey darken-1 col l12 s12 catLoad">
                             <div class="card-content white-text">
                                 <span class="card-title">Comments:</span>
-                                <div class="col-md-12 comment-container">
+                                <div class="col s12 l12 comment-container">
                                 </div>
                                 <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Make a Comment</a>
                           </div>
                         </div>
                       </div>
                     </div>
-                </div>
+                <!-- </div> -->
         
         
 
@@ -194,47 +185,50 @@
                     <!-- </div> -->
             </div>
 
-            <footer class="page-footer">
-                <div class="container">
+          <!--  <footer class="page-footer">
+                <div class="container"> 
                     <div class="row">
                         <div class="col l6 s12">
-                            <h5 class="red-text">Project 2 PetFinder</h5>
-                            <p class="black-text text-lighten-4">Footer content.</p>
+                            <h5 class="red-text center">PetFinder</h5>
                         </div>
-                        <div class="col l4 offset-l2 s12">
-                            <h5 class="black-text">GitHub Repo Team</h5>
+                        <div class="col s12">
+                            <h5 class="black-text center">GitHub Repo Team</h5>
                             <ul>
                                 <li>
-                                    <a class="black-text text-lighten-3 left" href="https://github.com/pmina">
+                                    <a class="black-text text-lighten-3 gitRepo left" href="https://github.com/pmina">
                                         <img src="./assets/css/if_github-social-media_765246.png" alt=""> Philopateer Mina</a>
                                 </li>
                                 <li>
-                                    <a class="black-text text-lighten-3 right" href="https://github.com/mecaniser">
+                                    <a class="black-text text-lighten-3 gitRepo left" href="https://github.com/mecaniser">
                                         <img src="./assets/css/if_github-social-media_765246.png" alt="logo"> Sergio Burca</a>
                                 </li>
                                 <li>
-                                    <a class="black-text text-lighten-3 right" href="https://github.com/taddes">
+                                    <a class="black-text text-lighten-3 gitRepo left" href="https://github.com/taddes">
                                         <img src="./assets/css/if_github-social-media_765246.png" alt="logo">Taddes Korris</a>
                                 </li>
                                 <li>
-                                    <a class="black-text text-lighten-3 left" href="https://github.com/jzdulin">
+                                    <a class="black-text text-lighten-3 gitRepo left" href="https://github.com/jzdulin">
                                         <img src="./assets/css/if_github-social-media_765246.png" alt="logo">Josh Dulin</a>
+                                </li>
+                                <li>
+                                        <a class="black-text text-lighten-4 right" href="https://github.com/jzdulin/PetFinder">
+                                            <img src="./assets/css/if_github-social-media_765246.png" alt="logo">Master GitHub Repo</a>      
                                 </li>
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> 
                 <div class="footer-copyright">
 
 
 
                     <div class="container black-text">
                         © 2018 Copyright ? Yes!
-                        <a class="black-text text-lighten-4 right" href="https://github.com/jzdulin/PetFinder">
-                            <img src="./assets/css/if_github-social-media_765246.png" alt="logo">Master GitHub Repo</a>
+                        
                     </div>
                 </div>
             </footer>
+        -->
 
             <script src="assets/js/homepage.js"></script>
 
