@@ -65,7 +65,7 @@
             <div class="container">
               
             <div class="row">
-                <div class="col l6 s12">
+                <div class="col l12 s12">
                   <div class="card cardCat blue-grey darken-1">
                     <div class="card-content white-text">
                       <span class="card-title breed-title"></span>
@@ -136,20 +136,25 @@
 
             <div class="container">
                     <div class="row">
-                        <div class="col l6 s12">
+                        <div class="col l12 s12">
                           <div class="card blue-grey darken-1">
                             <div class="card-content white-text">
                                 <span class="card-title">Comments:</span>
                                 <div class="col-md-12 comment-container">
                                 </div>
+                                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Make a Comment</a>
                           </div>
                         </div>
                       </div>
                     </div>
                 </div>
         
+        
 
-            <div class="container" id="commentStyle">
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <!-- <div class="container" id="commentStyle"> -->
                 <div class="row">
                     <form class="col l12 s12" id="commentForm">
                         <div class="row">
@@ -177,10 +182,16 @@
                                 </div>
                             </div>
                         </div>
-                        <button id="submit" type="button">Submit</button>
+                      
+                        
                     </form>
                 </div>
-
+                <div class="modal-footer">
+                        <a href="#!" id="submit" class="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+                        <a href="#!" class="modal-action  modal-trigger modal-close waves-effect waves-green btn-flat">Close</a>
+                        </div>
+                    </div>
+                    <!-- </div> -->
             </div>
 
             <footer class="page-footer">
