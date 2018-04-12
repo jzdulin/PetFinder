@@ -6,52 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+
     <!-- JQuery link: -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
     <!-- Moment js CDN -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
+    <!-- Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Pet Finder</title>
 </head>
 
 <body>
-    <!--NavBar Dropdown Structure -->
-    <ul id="dropdown1" class="dropdown-content">
-        <li>
-            <a href="#!">one</a>
-        </li>
-        <li>
-            <a href="#!">two</a>
-        </li>
-        <li class="divider"></li>
-        <li>
-            <a href="#!">three</a>
-        </li>
-    </ul>
     <nav>
         <div class="nav-wrapper">
             <a href="index.html" class="brand-logo">PetFinder</a>
             <ul class="right hide-on-med-and-down">
-                <li>
-                    <a href="cat.html">Cats</a>
-                </li>
-                <li>
-                    <a href="dog.html">Dogs</a>
-                </li>
-                <li>
-                    <a href="comment.html">Comments</a>
-                </li>
-                <!-- Dropdown Trigger -->
-                <li>
-                    <a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown
-                        <i class="material-icons left">send</i>
-                    </a>
+                <a href="comment.html">Comments</a>
                 </li>
             </ul>
         </div>
@@ -61,14 +40,14 @@
     <div class="container">
         <div class="row">
             <div class="col s12 m12">
-                <div class="card blue-grey darken-1">
+                <div class="card blue-grey darken-1" id="aboutStyle">
                     <div class="card-content white-text">
                         <span class="card-title">Pet Finder</span>
                         <p>
-                            <h6>Pet finder is a dynamic application that connects to a database on cats and dogs. The database
-                                contains information on most cat and dog breeds, including color, size,weight, behavioral
-                                attributes, feeding recommendationsand other relevant details. Various links and API connections
-                                will help populate the website with relevant data.</h6>
+                            <h6>Pet finder is a dynamic application that connects to a database on cats. The database contains
+                                information on most cat breeds, including color, size,weight, behavioral attributes, feeding
+                                recommendations and other relevant details. Various links and API connections will help populate
+                                the website with relevant data.</h6>
                         </p>
                     </div>
                     <div class="card-action">
@@ -77,32 +56,17 @@
                 </div>
             </div>
 
-           
-            <div class="row" >
-                <div class="carousel" id="catCarousel" >
-                    <!-- <a class="carousel-item"  href="#one!">
-                        <img src="./assets/images/eqyptianMau1.jpeg">
-                    </a>
-                    <a class="carousel-item" href="#two!">
-                        <img  src="./assets/images/japaneseBobtail3.png">
-                    </a> -->
-                    <!-- <a class="carousel-item" href="#three!">
-                        <img src="./assets/images/chineseLiHua2.png">
-                    </a>
-                    <a class="carousel-item" href="#four!">
-                        <img src="./assets/images/turkishVan1.jpeg">
-                    </a>
-                    <a class="carousel-item" href="#five!">
-                        <img src="./assets/images/eqyptianMau1.jpeg">
-                    </a> -->
-
+            <!-- Cat Carousel -->
+            <div class="row">
+                <div class="carousel" id="catCarousel">
                 </div>
             </div>
 
             <div class="container">
+              
             <div class="row">
                 <div class="col l6 s12">
-                  <div class="card blue-grey darken-1">
+                  <div class="card cardCat blue-grey darken-1">
                     <div class="card-content white-text">
                       <span class="card-title breed-title"></span>
                       <span class="image-holder"></span>
@@ -165,12 +129,9 @@
                       <span class="weight-holder"></span>
                     </div>
                     <div class="card-action">
-                      <a href="#">This is a link</a>
-                      <a href="#">This is a link</a>
+                      
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
 
             <div class="container">
@@ -188,24 +149,28 @@
                 </div>
         
 
-            <div class="row">
-                    <form class="col s12" id="commentForm">
+            <div class="container" id="commentStyle">
+                <div class="row">
+                    <form class="col l12 s12" id="commentForm">
                         <div class="row">
-                        <div class="input-field col s12">
-                            <input id="name" type="text" class="validate">
-                            <label for="name">Name</label>
-                        </div>
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">add_circle</i>
+                                <input id="name" type="text" class="validate">
+                                <label for="name">Name</label>
+                            </div>
                         </div>
                         <div class="row">
                             <div class="row">
                                 <div class="input-field col s12">
+                                    <i class="material-icons prefix">add_circle</i>
                                     <textarea id="comment" class="materialize-textarea"></textarea>
                                     <label for="comment">Comment</label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <label for="breedChoices">Select Category:</label>
+                                    <label for="breedChoices"></label>
+                                    <i class="material-icons prefix">unfold_more</i>
                                     <select class="form-control" id="breedChoices">
                                         <!-- <option value="" disabled selected>Choose breed</option> -->
                                     </select>
@@ -216,44 +181,52 @@
                     </form>
                 </div>
 
-        <footer class="page-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <h5 class="red-text">Project 2 PetFinder</h5>
-                        <p class="black-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-                    </div>
-                    <div class="col l4 offset-l2 s12">
-                        <h5 class="black-text">Team GitHub Repo</h5>
-                        <ul>
-                            <li>
-                                <a class="black-text text-lighten-3"  href="https://github.com/pmina"><img src="./assets/css/if_github-social-media_765246.png" alt=""> Philopateer Mina</a>
-                            </li>
-                            <li>
-                                <a class="black-text text-lighten-3" href="https://github.com/mecaniser"><img src="./assets/css/if_github-social-media_765246.png" alt=""> Sergio Burca</a>
-                            </li>
-                            <li>
-                                <a class="black-text text-lighten-3" href="https://github.com/taddes"><img src="./assets/css/if_github-social-media_765246.png" alt="">Taddes Korris</a>
-                            </li>
-                            <li>
-                                <a class="black-text text-lighten-3" href="https://github.com/jzdulin"><img src="./assets/css/if_github-social-media_765246.png" alt="">Josh Dulin</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
-            <div class="footer-copyright">
-                
 
+            <footer class="page-footer">
                 <div class="container">
-                    © 2018 Copyright ? Yes!
-                    <a class="black-text text-lighten-4 right" href="https://github.com/jzdulin/PetFinder"></a>
+                    <div class="row">
+                        <div class="col l6 s12">
+                            <h5 class="red-text">Project 2 PetFinder</h5>
+                            <p class="black-text text-lighten-4">Footer content.</p>
+                        </div>
+                        <div class="col l4 offset-l2 s12">
+                            <h5 class="black-text">GitHub Repo Team</h5>
+                            <ul>
+                                <li>
+                                    <a class="black-text text-lighten-3 left" href="https://github.com/pmina">
+                                        <img src="./assets/css/if_github-social-media_765246.png" alt=""> Philopateer Mina</a>
+                                </li>
+                                <li>
+                                    <a class="black-text text-lighten-3 right" href="https://github.com/mecaniser">
+                                        <img src="./assets/css/if_github-social-media_765246.png" alt="logo"> Sergio Burca</a>
+                                </li>
+                                <li>
+                                    <a class="black-text text-lighten-3 right" href="https://github.com/taddes">
+                                        <img src="./assets/css/if_github-social-media_765246.png" alt="logo">Taddes Korris</a>
+                                </li>
+                                <li>
+                                    <a class="black-text text-lighten-3 left" href="https://github.com/jzdulin">
+                                        <img src="./assets/css/if_github-social-media_765246.png" alt="logo">Josh Dulin</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </footer>
+                <div class="footer-copyright">
 
-        <script src="assets/js/homepage.js"></script>
-        <!-- <script src="./materialize.js"></script> -->
+
+
+                    <div class="container black-text">
+                        © 2018 Copyright ? Yes!
+                        <a class="black-text text-lighten-4 right" href="https://github.com/jzdulin/PetFinder">
+                            <img src="./assets/css/if_github-social-media_765246.png" alt="logo">Master GitHub Repo</a>
+                    </div>
+                </div>
+            </footer>
+
+            <script src="assets/js/homepage.js"></script>
+
 </body>
 
 </html>
