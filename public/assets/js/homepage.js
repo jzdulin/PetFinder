@@ -69,3 +69,62 @@ $(document).ready(function() {
 
   }); // Close click handler/AJAX call for cat info
 }); // Close document.ready
+
+
+function populateBreed() {
+  
+  $.ajax({
+    url: "/api/cats/",
+    method: "GET"
+  }).then(function(response) {
+    console.log(response);
+
+    var dropdown = document.getElementById("breedChoices");
+
+    let defaultOption = document.createElement("option");
+    defaultOption.text = "Choose Breed";
+
+    dropdown.appendChild(defaultOption);
+    dropdown.selectedIndex = 0;
+
+    for (var i = 0; i < response.length; i++) {
+      var option = document.createElement("option");
+      option.setAttribute("class", "dropdown-item");
+      option.text = response[i].breed;
+      option.value = response[i].id;
+      dropdown.appendChild(option);
+    }
+
+    $("select").formSelect();
+  });
+}
+
+populateBreed();
+
+var nameInput = $("#name");
+var commentInput = $("#comment");
+var postIdSelect = $("#breedChoices");
+
+$("#submit").on("click", function handleFormSubmit(event) {
+  event.preventDefault();
+  // Wont submit the post if we are missing a body or a title
+  if (!nameInput.val().trim() || !commentInput.val().trim() || !postIdSelect.val()) {
+    return;
+  }
+  // Constructing a newPost object to hand to the database
+  var newPost = {
+    name: nameInput.val().trim(),
+    comment: commentInput.val().trim(),
+    CatId: postIdSelect.val()
+  };
+
+
+  console.log(newPost);
+  submitPost(newPost)
+})
+
+function submitPost(Post) {
+  $.post("/api/comments/", Post, function() {
+    // window.location.href = "/";
+  });
+}
