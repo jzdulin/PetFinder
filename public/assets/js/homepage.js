@@ -1,8 +1,6 @@
-
 $(document).ready(function () {
   $('.modal').modal();
-
-
+$(".catLoad").hide();
 
   function populateCats() {
     $.ajax({
@@ -52,6 +50,7 @@ $(document).ready(function () {
   populateCats();
 
   $(document).on("click", ".cat-image", function () {
+    $(".catLoad").show();
     console.log("testing");
 
     // var catId = window.location.search.split("=")[1];
@@ -72,9 +71,9 @@ $(document).ready(function () {
       $(".weight").text(response.weight);
       $(".history").html(response.history);
       $(".personality").html(response.personality);
-      $(".health").text(response.health);
-      $(".care").text(response.care);
-      $(".children_animals").text(response.children_animals);
+      $(".health").html(response.health);
+      $(".care").html(response.care);
+      $(".children_animals").html(response.children_animals);
 
       // $(".lifeSpan-holder").html("<h5>Life Span: </h5>" + response.life_span + "<br>");
       // $(".weight-holder").html("<h5>Weight: </h5>"+ response.weight + "<br>");
@@ -159,6 +158,7 @@ var postIdSelect = $("#breedChoices");
 
 $("#submit").on("click", function handleFormSubmit(event) {
   event.preventDefault();
+  $(".catLoad").show();
   
   // Wont submit the post if we are missing a body or a title
   if (!nameInput.val().trim() || !commentInput.val().trim() || !postIdSelect.val()) {
