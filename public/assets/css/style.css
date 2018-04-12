@@ -6,6 +6,7 @@
 }
 .nav-wrapper{
     background-color: black;
+    opacity: 0.9;    
 }
 body{
     background-image: url("../images/Amazing.jpg")
@@ -16,3 +17,34 @@ body{
     top: -110px;
     left: 0;
 }
+
+.cardCat{
+    width: 100%;
+    opacity: 0.9;   
+     
+}
+#commentStyle{
+    opacity: 0.9;    
+    background-color:gainsboro;
+    width: 100%;
+    padding: 5px;
+}
+#aboutStyle{
+    opacity: 0.9;    
+    
+}
+.card .card-content {
+    padding: 10px;
+    border-radius: 0 0 2px 2px;
+}
+ /* .card{
+    padding: 10px;
+    border-radius: 0 0 2px 2px;
+}   
+.card-content{
+    padding: 10px;
+    border-radius: 0 0 2px 2px;
+}
+.slides{
+    height: auto;
+} */
