@@ -59,6 +59,26 @@ $(document).ready(function() {
       // $(".weight-holder").html("<h5>Weight: </h5>"+ response.weight + "<br>");
     });
 
+    $.ajax({
+      url: "/api/comments/" + catId,
+      method: "GET"
+    }).then(function(response) {
+      var posts = response;
+      console.log(response);
+      $(".comment-container").html("")
+      for (i = 0; i < response.length; i++) {
+        console.log(catId)
+        console.log(response[0].CatId)
+        var postsToAdd = []
+        if (catId == response[i].CatId){
+          var newPost = $("<span>")
+          newPost.html("<p>" + response[i].name + "<p>" + "<p>" + response[i].comment + "</p> <hr>");
+          $(".comment-container").append(newPost)
+          
+        }
+      }
+    });
+
       $(".slider").slider();
       $(".collapsible").collapsible();
 
@@ -69,7 +89,6 @@ $(document).ready(function() {
 
   }); // Close click handler/AJAX call for cat info
 }); // Close document.ready
-
 
 function populateBreed() {
   
