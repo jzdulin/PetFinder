@@ -30,8 +30,8 @@ ____
 * [**Heroku for deployment**](https://www.heroku.com/platform) |
 * `HTML`, ``CSS``, `Bootstrap 4`
 
-*  *New technologie*
-*  `Materialize`
+*New technologie*
+*  [`Materialize`](http://materializecss.com/) |
 
 **Future Development**
 *  [**Authentication protocols (Passport)**]() |
