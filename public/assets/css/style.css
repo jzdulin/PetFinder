@@ -2,8 +2,6 @@
     background-color: whitesmoke;
     margin-top: 10px;
     opacity: 0.9;
-    
-    
 }
 .nav-wrapper{
     background-color: black;
@@ -21,6 +19,8 @@ body{
     color: black;
     text-align: center;
 }
+
+
 
 /* .cardCat{
     width: 100%; 
