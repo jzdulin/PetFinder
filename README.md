@@ -28,7 +28,7 @@ ____
 * [**Express Server**](https://expressjs.com/) |
 * [**MySQL**](https://www.mysql.com/) |\
 * [**Heroku for deployment**](https://www.heroku.com/platform) |
-* `HTML`, ``CSS``, `Bootstrap 4`
+* `HTML`, ``CSS``
 
 *New technologie*
 *  [`Materialize`](http://materializecss.com/) |
