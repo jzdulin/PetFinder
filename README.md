@@ -1,5 +1,5 @@
 # PetFinder
-> ![Illustration](https://i.pinimg.com/originals/5d/c8/44/5dc8449fcb3b560e8fa896f8d436a06a.jpg)
+> ![Illustration](./public/assets/images/cat.jpg)
 **Pet finder is a dynamic application that connects to a database on cats.  The database contains information on most cat breeds, including color, size, weight, behavioral attributes, feeding recommendations and other relevant details. Various links and API connections will help populate the website with relevant data.**
 Click  [PetIT]()  link to the app.
 
