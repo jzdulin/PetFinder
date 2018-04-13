@@ -6,7 +6,7 @@
 
 > Click  [PetIT]() to test app
 
-**Purpose:** _PetFinder is intended to provide users with relevant information on any given breed of cat. Whether a user is interested in adoptinga pet or learning more about their pet’s breed, this application contains applicable and practical data.  Furthermore, the application provides users the opportunity to connect to a community of owners and contribute their own data and experiences, therefore enhancing the user experience for all._
+**Purpose:** _PetFinder is intended to provide users with relevant information on any given breed of cat. Whether a user is interested in adopting a pet or learning more about their pet’s breed, this application contains applicable and practical data.  Furthermore, the application provides users the opportunity to connect to a community of owners and contribute their own data and experiences, therefore enhancing the user experience for all._
 
 ## Getting Started
 ____
