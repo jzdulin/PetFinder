@@ -20,15 +20,15 @@ ____
 
 ## Technologies to be used
 
-* [NPM]() |
-* [_BASH terminal_]() | 
-* [**jQuery**]() |
-*  [**SEQuelize**]() |
-*  [**Node.js**]() |
-*  [**Express Server**]() |
-*  [**MySQL & Sequelize ORM**]() |\
-*  [**Heroku for deployment**]() |
-*  `HTML`, ``CSS``, `Bootstrap 4` , `jQuery UI` 
+* [NPM](https://www.npmjs.com/) |
+* [_GIT BASH terminal_](https://git-scm.com/downloads) | 
+* [**jQuery**](https://jquery.com/) |
+* [**SEQuelize**](http://docs.sequelizejs.com/) |
+* [**Node.js**](https://nodejs.org/en/) |
+* [**Express Server**](https://expressjs.com/) |
+* [**MySQL**](https://www.mysql.com/) |\
+* [**Heroku for deployment**](https://www.heroku.com/platform) |
+* `HTML`, ``CSS``, `Bootstrap 4`
 
 *  *New technologie*
 *  `Materialize`
