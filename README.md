@@ -34,7 +34,7 @@ ____
 *  [`Materialize`](http://materializecss.com/) |
 
 **Future Development**
-*  [**Authentication protocols (Passport)**]() |
+*  [**Authentication protocols (Passport)**](http://www.passportjs.org/docs/authenticate/) |
 *  _More user Interaction_
 *  _Dog PetFinder_
 
