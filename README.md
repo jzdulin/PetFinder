@@ -30,7 +30,7 @@ ____
 * [**Heroku for deployment**](https://www.heroku.com/platform) |
 * `HTML`, ``CSS``
 
-*New technologie*
+*New technology*
 *  [`Materialize`](http://materializecss.com/) |
 
 **Future Development**
