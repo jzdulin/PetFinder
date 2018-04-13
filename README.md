@@ -1,5 +1,5 @@
 
-# Project No. 2–PetFinder
+# PetFinder
 > ![Illustration](./public/assets/images/cat.jpg)
 # PetFinder
 **Pet finder is a dynamic application that connects to a database on cats.  The database contains information on most cat breeds, including color, size, weight, behavioral attributes, feeding recommendations and other relevant details. Various links and API connections will help populate the website with relevant data.**
