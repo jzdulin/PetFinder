@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+
+    <!-- JQuery link: -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <!-- Moment js CDN -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <!-- Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Pet Finder</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">PetFinder</a>
+        </div>
+    </nav>
+
+    <!-- Welcome Card -->
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12">
+                <div class="card blue-grey darken-1" id="aboutStyle">
+                    <div class="card-content white-text">
+
+                        <span class="card-title">Pet Finder</span>
+
+                        <p>
+                            <h6>Welcome to PetFinder! This is your ultimate source for information on all breeds of cats. Select
+                                a cat breed below to see all related info on that type of cat. Feel free to leave a comment
+                                about your experience with this type of cat!
+                            </h6>
+                        </p>
+                    </div>
+                </div>
+                <!-- Side nav Info -->
+                <a data-target="slide-out" class="sidenav-trigger btn-floating btn-large cyan pulse ">
+                    <i class="material-icons">menu</i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Cat Carousel -->
+    <div class="row">
+        <div class="carousel" id="catCarousel">
+        </div>
+    </div>
+
+    <!-- Single Cat Area -->
+    <div class="container">
+        <div class="row">
+            <div class="col l12 s12">
+                <div class="carousel">
+                    <li>
+                        <span class="cat-img1 carousel-item"></span>
+                        <!-- cat image 1 -->
+                    </li>
+                    <li>
+                        <span class="cat-img2 carousel-item"></span>
+                        <!-- cat image 2 -->
+                    </li>
+                    <li>
+                        <span class="cat-img3 carousel-item"></span>
+                        <!-- cat image 3 -->
+                    </li>
+                </div>
+            </div>
+            <div class="col l12 s12">
+                <div class="card blue-grey darken-1 catLoad">
+
+                <div class="card-content white-text">
+
+                <!-- Collapsible Menu -->
+                <div class="row">
+                    <ul class="collapsible expandable">
+                        <!-- Life Span -->
+                        <li>
+
+                            <div class="collapsible-header waves-effect black-text ">
+                                <i class="material-icons">autorenew</i>Life Span</div>
+
+                            <div class="collapsible-body">
+                                <span class="life_span">Lorem ipsum dolor sit amet.</span>
+                            </div>
+                        </li>
+                        <!-- Weight -->
+                        <li>
+                            <div class="collapsible-header waves-effect black-text">
+                                <i class="material-icons">pets</i>Weight</div>
+                            <div class="collapsible-body">
+                                <span class="weight"></span>
+                            </div>
+                        </li>
+                        <!-- History -->
+                        <li>
+                            <div class="collapsible-header waves-effect black-text">
+                                <i class="material-icons">history</i>History</div>
+                            <div class="collapsible-body">
+                                <span class="history">Lorem ipsum dolor sit amet.</span>
+                            </div>
+                        </li>
+                        <!-- Personality -->
+                        <li>
+                            <div class="collapsible-header waves-effect black-text">
+                                <i class="material-icons">mood</i>Personality</div>
+                            <div class="collapsible-body">
+                                <span class="personality">Lorem ipsum dolor sit amet.</span>
+                            </div>
+                        </li>
+                        <!-- Health -->
+                        <li>
+                            <div class="collapsible-header waves-effect black-text">
+                                <i class="material-icons">healing</i>Health</div>
+                            <div class="collapsible-body">
+                                <span class="health"></span>
+                            </div>
+                        </li>
+                        <!-- Care -->
+                        <li>
+                            <div class="collapsible-header waves-effect black-text">
+                                <i class="material-icons">child_care</i>Care</div>
+                            <div class="collapsible-body">
+                                <span class="care"></span>
+                            </div>
+                        </li>
+                        <!-- Children and Other animals -->
+                        <li>
+                            <div class="collapsible-header waves-effect black-text">
+                                <i class="material-icons">child_friendly</i>Children and Other Animals</div>
+                            <div class="collapsible-body">
+                                <span class="children_animals"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End of collapsible menu -->
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Comments area -->
+    <div class="row">
+        <div class="col l12 s12">
+            <div class="card blue-grey darken-1 col l12 s12 catLoad">
+                <div class="card-content white-text">
+                    <span class="card-title">Comments:</span>
+                    <div class="col s12 l12 comment-container">
+                    </div>
+                    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Make a Comment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <!-- <div class="container" id="commentStyle"> -->
+            <div class="row">
+                <form class="col l12 s12" id="commentForm">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">add_circle</i>
+                            <input id="name" type="text" class="validate">
+                            <label for="name">Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">add_circle</i>
+                                <textarea id="comment" class="materialize-textarea"></textarea>
+                                <label for="comment">Comment</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <label for="breedChoices"></label>
+                                <i class="material-icons prefix">unfold_more</i>
+                                <select class="form-control" id="breedChoices">
+                                    <!-- <option value="" disabled selected>Choose breed</option> -->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" id="submit" class="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+                <a href="#!" class="modal-action  modal-trigger modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+    </div>
+
+    <!-- Test Footer Tooltip -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 ">
+                    <h5 class="black-text right">PetFinder</h5>
+                </div>
+                <div class="col xl7 push-xl5">
+                    <div class="fixed-action-btn">
+                        <a class="btn-floating btn-large purple ">
+                            <i class="large material-icons">account_box</i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a class="btn-floating red btn tooltipped" data-tooltip="Josh Dulin" href="https://github.com/jzdulin">
+                                    <i class="material-icons">face</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn-floating yellow darken-1 btn tooltipped" data-position="bottom" data-tooltip="Taddes Korris" href="https://github.com/taddes">
+                                    <i class="material-icons">face</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn-floating green btn tooltipped" data-tooltip="Sergio Burca" href="https://github.com/mecaniser">
+                                    <i class="material-icons">face</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn-floating blue btn tooltipped" data-position="bottom" data-tooltip="Philopateer Mina" href="https://github.com/pmina">
+                                    <i class="material-icons">face</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+
+            <div class="container black-text center-align">
+                © 2018 Copyright ? Yes!
+            </div>
+        </div>
+    </footer>
+
+    <!-- Test Side Nav Footer -->
+
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="card-panel hoverable">
+                    <a>
+                        <img class="circle" src="./assets/images/Default_images/favicon.jpg">PetFinder</a>
+                </div>
+            </div>
+            <a class="subheader">Team Members</a>
+
+        </li>
+        <li class="card-panel hoverable">
+            <a class="black-text text-lighten-3 waves-effect" href="https://github.com/pmina">
+                <img src="./assets/images/Default_images/if_Git_1288100.png" alt="logo" class="circle responsive-img">
+                <span class="black-text">Philopateer Mina</span>
+            </a>
+        </li>
+        <li class="card-panel hoverable">
+            <a class="black-text text-lighten-3 waves-effect" href="https://github.com/mecaniser">
+                <img src="./assets/images/Default_images/if_Git_1288100.png" alt="logo" class="circle responsive-img">
+                <span class="black-text">Sergio Burca</span>
+            </a>
+        </li>
+        <li class="card-panel hoverable">
+            <a class="black-text text-lighten-3 waves-effect" href="https://github.com/taddes">
+                <img src="./assets/images/Default_images/if_Git_1288100.png" alt="logo" class="circle responsive-img">
+                <span class="black-text">Taddes Korris</span>
+            </a>
+        </li>
+        <li class="card-panel hoverable">
+            <a class="black-text text-lighten-3 waves-effect" href="https://github.com/jzdulin">
+                <img src="./assets/images/Default_images/if_Git_1288100.png" alt="logo" class="circle responsive-img">
+                <span class="black-text">Josh Dulin</span>
+            </a>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+
+        <li>
+            <div class="container black-text">
+                © 2018 Copyright ? Yes!
+            </div>
+        </li>
+    </ul>
+
+
+    <script src="assets/js/homepage.js"></script>
+
+</body>
+
+</html>
