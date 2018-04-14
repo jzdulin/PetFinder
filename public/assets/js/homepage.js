@@ -1,6 +1,8 @@
 $(document).ready(function () {
   $('.modal').modal();
 $(".catLoad").hide();
+// Side Nav Tean infi
+$('.sidenav').sidenav();
 
   function populateCats() {
     $.ajax({
