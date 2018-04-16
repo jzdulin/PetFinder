@@ -45,7 +45,6 @@ ____
 ![illustration](./public/assets/images/CapturePet.PNG)
 ---
 <!-- ![illustration](./public/assets/images/Default_images/CapturePetL.PNG) -->
----
 ![illustration](./public/assets/images/Default_images/CapturePetM.PNG)
 ---
 ![illustration](./public/assets/images/Default_images/CapturePetM1.PNG)
